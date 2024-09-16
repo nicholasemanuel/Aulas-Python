@@ -1,8 +1,12 @@
-nome = str(input("Qual seu nome? "))
-peso = float(input("Digite seu peso: "))
-altura = float(input("Digite sua altura: "))
+#Escreva um programa que peça duas palavras ao usuário e compare o tamanho (número de caracteres) 
+# de cada uma delas
 
-imc_calculo = peso // altura ** 2
+word_1 = input("Digite a primeira palavra: ")
+word_2 = input("Digite a segunda palavra: ")
 
-print("Seu peso é:", imc_calculo)
-
+if len(word_1) == len(word_2):
+    print("Elas são do mesmo tamanho")
+elif len(word_1) > len(word_2):
+    print("A primeira palavra é maior")
+else:
+    print("A segunda palavra é maior")

@@ -1,14 +1,12 @@
-nome = "Nicholas Emanuel"
-altura = 1.70
-peso = 67
-imc = peso / altura ** 2
+#Faça um programa que peça a idade de 
+# duas pessoas e determine quem é mais velho ou se têm a mesma idade.
 
-#Sempre que tiver um f antes de Strings, ele é chamado de f-strings ou format string
-linha_1 = f"{nome} tem {altura:.2f} de altura, "
-linha_2 = f"pesa {peso} kgs e seu imc é"
-linha_3 = f"{imc:.2f}"
+idade1 = int(input("Idade da primeira pessoa: "))
+idade2 = int(input("Idade da segunda pessoa: "))
 
-print(linha_1)
-print(linha_2)
-print(linha_3)
-
+if idade1 == idade2:
+    print("As duas pessoas tem a mesma idade")
+elif idade1 > idade2:
+    print("A primeira pessoa é mais velha")
+else:
+    print("A segunda pessoa é mais velha")

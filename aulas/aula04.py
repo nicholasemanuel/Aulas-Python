@@ -8,3 +8,4 @@ if idade >= 18:
     print("Pode entrar na balada")
 else:
     print("Não pode entrar na balada ")
+    
